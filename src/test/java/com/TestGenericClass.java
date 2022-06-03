@@ -1,12 +1,14 @@
-package com.generics;
+package com;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
+import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 
-public class TestGenericClass {
+@Slf4j
+class TestGenericClass {
 
     @Test
     void test() {
@@ -29,12 +31,12 @@ public class TestGenericClass {
         Data<Integer> d2 = new Data<>(123);
 
 
-        System.out.println(d1);
+        log.info(String.valueOf(d1));
 
         //int data = (int) d1.getData(); //compile time error
         int data2 = d2.getData();
 
-        System.out.println(d2.getDummyData());
+        log.info(String.valueOf(d2.getDummyData()));
 
 
     }

@@ -1,4 +1,4 @@
-package com.generics;
+package com;
 
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
@@ -33,5 +33,6 @@ class TestWhyGenerics {
         intList.add(2);
         //intList.add("3"); //compile time error
         //A compiler error is much better than a class cast exception at runtime.
+        log.info(String.valueOf(intList));
     }
 }

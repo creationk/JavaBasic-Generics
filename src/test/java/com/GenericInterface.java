@@ -1,4 +1,4 @@
-package com.generics;
+package com;
 
 public interface GenericInterface<TI> {
     TI getDummyData();

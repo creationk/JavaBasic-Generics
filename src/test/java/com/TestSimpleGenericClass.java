@@ -1,4 +1,4 @@
-package com.generics;
+package com;
 
 import lombok.AllArgsConstructor;
 import lombok.ToString;
